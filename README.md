@@ -1,6 +1,8 @@
-# Preprocessing  
+# Handover time series and comparison 
 
-python3 create_dataset.py ./location_dataset ./location_dataset_out  
+## Preprocessing  
+
+`python3 create_dataset.py ./location_dataset ./location_dataset_out`
 
 - Day  
 - Timestamp  
@@ -22,8 +24,6 @@ python3 create_dataset.py ./location_dataset ./location_dataset_out
 |   ├── location_9_od_interactivity_egaming_it_tv_tti_1.csv  
 |   └── location_9_od_interactivity_egaming_it_tv_tti_2.csv  
 
-Right above shows how the input looks like  
-
 `<output CSV path>`  
 ├── location_4  
 │   ├── location_4_od_interactivity_egaming_it_tv_tti_0.csv  
@@ -37,3 +37,27 @@ Right above shows how the input looks like
 |   ├── location_9_od_interactivity_egaming_it_tv_tti_0.csv  
 |   ├── location_9_od_interactivity_egaming_it_tv_tti_1.csv  
 |   └── location_9_od_interactivity_egaming_it_tv_tti_2.csv  
+
+## Handover detection
+
+python3 ./capture_handovers.py <input processed CSV path> <output aggregated CSVs path>  
+
+<input processed CSV path>  
+├── location_4  
+│   ├── location_4_od_interactivity_egaming_it_tv_tti_0.csv  
+│   ├── location_4_od_interactivity_egaming_it_tv_tti_1.csv  
+│   └── location_4_od_interactivity_egaming_it_tv_tti_2.csv  
+├── location_7  
+│   ├── location_7_od_interactivity_egaming_ch_tv_tti_0.csv  
+│   ├── location_7_od_interactivity_egaming_ch_tv_tti_1.csv  
+│   └── location_7_od_interactivity_egaming_ch_tv_tti_2.csv  
+└── location_9  
+    ├── location_9_od_interactivity_egaming_it_tv_tti_0.csv  
+    ├── location_9_od_interactivity_egaming_it_tv_tti_1.csv  
+    └── location_9_od_interactivity_egaming_it_tv_tti_2.csv  
+
+`<output aggregated CSVs path>`  
+├── location_4_aggregated.csv  
+├── location_4_aggregated.json  
+├── location_9_aggregated.csv  
+└── location_9_aggregated.json  
