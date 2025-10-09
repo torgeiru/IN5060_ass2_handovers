@@ -51,10 +51,10 @@ python3 ./capture_handovers.py <input processed CSV path> <output aggregated CSV
 │   ├── location_7_od_interactivity_egaming_ch_tv_tti_0.csv  
 │   ├── location_7_od_interactivity_egaming_ch_tv_tti_1.csv  
 │   └── location_7_od_interactivity_egaming_ch_tv_tti_2.csv  
-└── location_9  
-    ├── location_9_od_interactivity_egaming_it_tv_tti_0.csv  
-    ├── location_9_od_interactivity_egaming_it_tv_tti_1.csv  
-    └── location_9_od_interactivity_egaming_it_tv_tti_2.csv  
+├─ location_9  
+|   ├── location_9_od_interactivity_egaming_it_tv_tti_0.csv  
+|   ├── location_9_od_interactivity_egaming_it_tv_tti_1.csv  
+|   └── location_9_od_interactivity_egaming_it_tv_tti_2.csv  
 
 `<output aggregated CSVs path>`  
 ├── location_4_aggregated.csv  
